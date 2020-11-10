@@ -62,8 +62,8 @@ function AddTeam() {
             </div>
             <div style={{ marginTop: 10 }}>
                 Game <br />
-                <input type="radio" {...game} value = "League Of Legends" name = "game" autoComplete="off" /> League of Legends <br />
-                <input type="radio" {...game} value = "Couter Strike: Global Offensive"name = "game" autoComplete="off" /> Couter Strike: Global Offensive <br />
+                <input type="radio" {...game} value = "League of Legends" name = "game" autoComplete="off" /> League of Legends <br />
+                <input type="radio" {...game} value = "Counter Strike: Global Offensive"name = "game" autoComplete="off" /> Couter Strike: Global Offensive <br />
                 <input type="radio" {...game} value = "Dota 2"name = "game" autoComplete="off" /> Dota 2 <br />
             </div>
             <div style={{ marginTop: 10 }}>
@@ -84,9 +84,9 @@ function AddTeam() {
                 value={addTeamLoading ? 'Adding...' : 'Add new team'}
                 onClick={handleAddTeam}
                 disabled={addTeamLoading} />
-            {addTeamError 
-                ? <div  style = {{color: 'red', marginTop: 10 }}> {addTeamError}</div>
-                : <div  style = {{color: 'green', marginTop: 10 }}> {addTeamMessage}</div>
+            {addTeamMessage 
+                ? <div  style = {{color: 'green', marginTop: 10 }}> {addTeamMessage}</div>
+                : <div  style = {{color: 'red', marginTop: 10 }}> {addTeamError}</div>
             }
         </div>
     )

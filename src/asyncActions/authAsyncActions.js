@@ -65,8 +65,6 @@ export const addTeamAsync = ( teamLeader, teamName, teamMembers, teamTag, game) 
 
     const result = await addTeamService( teamLeader, teamName, teamMembers, teamTag, game);
 
-    console.log(result);
-
     if (result.error) {
         dispatch(addTeamFailure(result.response.data.message));
         return;
