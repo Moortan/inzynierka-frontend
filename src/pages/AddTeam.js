@@ -7,7 +7,6 @@ import { verifyTokenAsync } from "../asyncActions/authAsyncActions";
 import { setAuthToken } from '../services/auth';
 
 
-
 import { addTeamAsync } from '../asyncActions/authAsyncActions'
 
 
